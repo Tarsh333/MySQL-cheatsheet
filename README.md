@@ -619,3 +619,14 @@ select month("1998-12-30");
 ```sql
 select year("1998-12-30");
 ```
+
+## Constraints
+```
+CREATE TABLE student (
+  student_id INT PRIMARY KEY AUTO_INCREMENT,
+  name VARCHAR(40) NOT NULL,
+  -- name VARCHAR(40) UNIQUE,
+  major VARCHAR(40) DEFAULT 'undecided',
+);
+-- primary key is combination of unique and not null
+```
